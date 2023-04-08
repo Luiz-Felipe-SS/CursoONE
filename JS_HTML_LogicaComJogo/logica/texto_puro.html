@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso_ONE</title>
+    </head>
+        <h1>Meu Primeiro TESTE</h1>
+    <body>
+        <p>Seria isso um programa? Descubra visitando o alura <a href="https://www.alura.com.br">Clique aqui</a></p>
+        <!--indiquei com tag 'script' que iniciou meu código em JavaScript-->
+        <script>
+            //'alert' tag para mostrar um alerta no inicio da pagina  
+            alert("Isso sim é um programa!");
+            document.write("Escrevendo textos com JS" + "<br>");
+            //vamos trabalhar com a lógica da escrita do JS 
+            var idade = 35;
+            var idadeCompleta = 25.6;
+            document.write("Roberto de matos " + 25 + " anos" + "<br>");
+            document.write("Lucas Silva 42 anos" + "<br>");
+            document.write("Rodrigo Biachi " + (11 * 2) + " anos" + "<br>");
+            document.write("Andrey " + idade + " anos" + "<br>");
+            //'Math.round() função para retornar o menor número inteiro '
+            document.write("Caio da Costa " + Math.round(idadeCompleta) + " anos" + "<br>");
+
+            //agora vamos ver como posso criar minhas próprias funções em JS
+            function pulaLinha(){
+                document.write("<br>");
+            }
+
+            function mostra(frase){
+                document.write(frase);
+                pulaLinha();
+            }
+
+            document.write("Leonardo" + 20 + "anos" );
+            pulaLinha();
+            document.write("Gabriel " + 22 +" anos");
+            pulaLinha();
+            mostra("Flávio " + 67 + " anos");
+            mostra("Joaquim " + (53 - 1) + " anos");
+        </script>
+    </body>
+</html>
+
+

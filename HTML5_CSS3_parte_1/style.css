@@ -1,0 +1,29 @@
+/* 'background-color:' = passei para o meu campo 'body' a cor 'beige'*/
+body{
+    background-color: beige;
+/*'text-aling' = centraliza o campo */
+    
+}
+#bloco{
+    background-color: burlywood;
+    text-align: center;
+}
+
+
+/*passei para minha tag 'b' a cor vermelha*/
+b{
+    color: red;
+}
+
+#teste{
+     font-size: 25px;
+}
+/*passei a minha lista para o canto da tela*/
+.lista{
+    text-align: left;
+    
+    
+}
+.imagem_2{
+    margin-top: -5%;
+}
