@@ -1,0 +1,107 @@
+
+header{
+background-color: tan;
+
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0%;
+}
+
+.box {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav li{
+    /*'display: inline' comando para alinhar textos*/
+    display: inline;
+    font-size: 30px;
+    /*tag para tranformar textos em maiúsculo*/
+    text-transform: uppercase;
+    /*tag para espasamentoo entre uma palavra e outra*/
+    margin: 0 0 0 20px;
+}
+
+
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: rgb(219, 207, 38);
+    text-decoration: underline;
+
+}
+
+/*tags para resolver o proble de alinhamento do (li). pois na hora de fazer o 'display: inline-block;' o navegador nao alinhava para o lado.*/
+.produtos {
+    width:940px; 
+    margin-top: 0 auto;
+    padding: 50px ;
+    margin: auto;
+    align-items: center;
+    
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: coral;
+}
+
+.produtos li:hover h2{
+    font-size: 25px;
+}
+.produtos li:active{
+    border-color: aliceblue;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.produto-preço {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.produto-decriçao{
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: tan;
+    
+}
+
+
+
+
+
+
+
+
+
+

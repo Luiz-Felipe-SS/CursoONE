@@ -40,6 +40,42 @@
             pulaLinha();
             mostra("Flávio " + 67 + " anos");
             mostra("Joaquim " + (53 - 1) + " anos");
+
+            pulaLinha();
+
+            //função para calcular o IMC
+ 
+            function calculaIMC(altura, peso){
+                document.write("O seu IMC é de: " + (peso / (altura * altura)));
+            }
+            // o retorno do 'prompt' normalmente é string, mas quando efetuado uma operação de (* ou /) ele é transformado em numero automaticamente 
+            var entradaAltura = prompt("informe sua altura: ");
+            var entradaPeso = prompt("informe seu peso: ");
+            calculaIMC(entradaAltura, entradaPeso);
+
+            pulaLinha();
+            pulaLinha();
+
+            //passei para o promt o 'parseInt' pois a tag 'prompt' retorna uma string
+            var vitorias = parseInt(prompt("digite o numero de vitorias: "));
+            var empates = parseInt(prompt("digite o numero de empates: "));
+            var pontos = (vitorias * 3) + empates;
+            //aqui passai um condifional para ver se o meu time melhorou de possição
+            if(pontos > 28){
+                mostra("Seu time esta melhor que no ano passado");
+            }
+            else if(pontos < 28){
+                mostra("Seu time esta pior que no ano passado");
+            }
+            else {
+                mostra("Seu time esta igual ao ano passado");
+            }
+
+            mostra("Os pontos do seu time é: " + pontos);
+
+
+
+
         </script>
     </body>
 </html>

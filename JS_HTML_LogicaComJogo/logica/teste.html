@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+    </head>
+    <body>
+        <input type="text" id="entradaValor">
+        <button onclick="verifica()">Clique</button>
+      
+        <script>
+            var numeroAleatorio = Math.floor(Math.random() * 5);
+            entradaValor.focus();
+            function verifica() {
+                var entradaValor = document.getElementById("entradaValor").value;
+                
+                if (entradaValor == numeroAleatorio) {
+                    alert("Você acertou!!!" + numeroAleatorio);
+                    
+                    numeroAleatorio = Math.floor(Math.random() * 5);
+                    entradaValor.focus();
+                    
+                        if (entradaValor == numeroAleatorio) {
+                        alert("Você acertou!!!" + numeroAleatorio);
+                        }
+
+                    entradaValor = "";
+                    entradaValor.focus();
+                }
+                
+                
+            }
+            entradaValor.focus();
+        </script>
+      </body>
+</html>
